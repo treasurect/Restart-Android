@@ -5,8 +5,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModel
-import androidx.lifecycle.ViewModelProvider
 import com.treasure.basic.helper.LogHelper
 import com.treasure.basic.view.LoadingView
 
@@ -53,7 +51,7 @@ open class BaseFragment : Fragment() {
         }
     }
 
-    open fun hindLoading() = loadingView?.hide()
+    open fun hideLoading() = loadingView?.hide()
 
     override fun onDestroyView() {
         super.onDestroyView()

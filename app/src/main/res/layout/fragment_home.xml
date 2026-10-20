@@ -1,80 +1,193 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/white"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
-    <FrameLayout
+    <ImageView
         android:layout_width="match_parent"
-        android:layout_height="48dp">
-        <ImageView
-            android:id="@+id/ivHomeChat"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_gravity="start|center_vertical"
-            android:layout_marginStart="12dp"
-            android:contentDescription="@string/action_publish"
-            android:src="@drawable/ic_chat_bubble" />
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@mipmap/bg_home_top"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:gravity="center_vertical"
-            android:orientation="horizontal">
-            <TextView
-                android:id="@+id/tvHomeFollow"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="28dp"
-                android:text="关注"
-                android:textColor="@color/text_tertiary"
-                android:textSize="16sp" />
-            <TextView
-                android:id="@+id/tvHomeDiscover"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="28dp"
-                android:text="发现"
-                android:textColor="@color/text_primary"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-            <TextView
-                android:id="@+id/tvHomeQingdao"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="青岛"
-                android:textColor="@color/text_primary"
-                android:textSize="16sp" />
-        </LinearLayout>
-
-        <ImageView
-            android:id="@+id/ivHomeSearch"
-            android:layout_width="22dp"
-            android:layout_height="22dp"
-            android:layout_gravity="end|center_vertical"
-            android:layout_marginEnd="12dp"
-            android:contentDescription="@string/action_search"
-            android:src="@drawable/ic_search" />
-    </FrameLayout>
-
-    <com.google.android.material.tabs.TabLayout
-        android:id="@+id/homeCategoryTabs"
-        android:layout_width="match_parent"
-        android:layout_height="42dp"
-        android:background="@color/white"
-        app:tabIndicatorColor="@color/xhs_red"
-        app:tabIndicatorFullWidth="false"
-        app:tabMode="scrollable"
-        app:tabRippleColor="@color/bg_avatar"
-        app:tabSelectedTextColor="@color/xhs_red"
-        app:tabTextColor="@color/text_primary" />
-
-    <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/homeCategoryPager"
+    <com.treasure.basic.view.StatusBarSpaceView
+        android:id="@+id/space"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1" />
-</LinearLayout>
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_loc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:drawableStart="@drawable/ic_location"
+        android:drawablePadding="2dp"
+        android:ellipsize="end"
+        android:maxWidth="130dp"
+        android:maxLines="1"
+        android:paddingTop="8dp"
+        android:textColor="#3D485C"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/space"
+        android:text="李沧区" />
+
+    <LinearLayout
+        android:id="@+id/ll_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="10dp"
+        android:paddingEnd="16dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_loc">
+
+        <ImageView
+            android:id="@+id/iv_drawer_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="6dp"
+            android:src="@drawable/ic_chat_bubble" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_search"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_search_box"
+        app:layout_constraintTop_toBottomOf="@id/ll_toolbar">
+
+        <ImageView
+            android:id="@+id/iv_search_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:src="@drawable/ic_search"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/et_search_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="6dp"
+            android:background="@android:color/transparent"
+            android:hint="hint_home_search"
+            android:singleLine="true"
+            android:textColor="#333333"
+            android:textColorHint="#A2A7BC"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/iv_right_entry"
+            app:layout_constraintStart_toEndOf="@id/iv_search_icon"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_right_entry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_robot"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cl_search">
+
+        <!--第一部分：伸缩工具栏-->
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/app_bar_personal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            app:elevation="0dp">
+
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:id="@+id/collapsingToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_scrollFlags="scroll|enterAlways|snap">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="16dp"
+                    android:orientation="vertical">
+
+                    <com.treasure.basic.view.CarouselView
+                        android:id="@+id/carouselView"
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp"
+                        android:layout_marginTop="16dp"/>
+
+                    <LinearLayout
+                        android:id="@+id/ll_notice"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:layout_marginVertical="16dp"
+                        android:background="@drawable/bg_solid_fdfdff_r_36"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="16dp"
+                        android:paddingVertical="12dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_latest_notice" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rv_notice"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:layout_constraintBottom_toBottomOf="parent" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_centerVertical="true"
+                app:layout_behavior="appbar_scrolling_view_behavior"
+                app:tabIndicator="@drawable/center_tab_line"
+                app:tabIndicatorColor="@color/colorPrimary"
+                app:tabIndicatorFullWidth="false"
+                app:tabIndicatorHeight="3dp"
+                app:tabMode="scrollable"
+                android:background="@android:color/transparent"
+                app:tabBackground="@android:color/transparent"
+                app:tabPaddingStart="0dp"
+                app:tabRippleColor="@android:color/transparent"
+                app:tabSelectedTextColor="@color/colorPrimaryBlack"
+                app:tabTextAppearance="@style/TabSearchTextSize"
+                app:tabTextColor="@color/colorPrimaryGray" />
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

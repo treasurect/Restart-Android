@@ -4,6 +4,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.treasure.basic.constant.WebLoadKey.transUrlByBaseH5
+import com.treasure.basic.helper.LogHelper
+import com.treasure.basic.utils.GlideUtils.wholeUrl
 import com.treasure.basic.view.CommonImageView
 import com.treasure.restart.R
 
@@ -32,7 +35,9 @@ class ImagePreviewAdapter(
         position: Int
     ) {
 
-        holder.imageView.load(images[position])
+        val wholeUrl = images[position].wholeUrl()
+        LogHelper.i("Image Preview URL: $wholeUrl")
+        holder.imageView.load(wholeUrl)
     }
 
     override fun getItemCount(): Int {

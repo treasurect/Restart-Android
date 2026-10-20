@@ -15,6 +15,7 @@ import com.treasure.basic.ContextHolder
 import com.treasure.basic.helper.AppEvent
 import com.treasure.basic.helper.AppEventManager
 import com.treasure.basic.utils.GlideUtils
+import com.treasure.basic.utils.GlideUtils.wholeUrl
 import com.treasure.basic.utils.ToastUtils
 import com.treasure.restart.R
 import com.treasure.restart.base.BaseFragment
@@ -121,7 +122,7 @@ class MomentListFragment : BaseFragment() {
 
         binding.stickyHeader.visibility = View.VISIBLE
         profileViewModel.profile.value?.let {
-            GlideUtils.loadCircle(ContextHolder.app(), it.avatar, binding.stickyAvatar)
+            GlideUtils.loadCircle(ContextHolder.app(), it.avatar.wholeUrl(), binding.stickyAvatar)
             binding.stickyNickname.text = it.username
         } ?: run {
             binding.stickyAvatar.setImageResource(R.drawable.ic_default_avatar)

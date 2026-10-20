@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Restart</string>
     <string name="tab_home">首页</string>
-    <string name="tab_market">市集</string>
+    <string name="tab_market">圈子</string>
     <string name="tab_message">消息</string>
     <string name="tab_me">我</string>
     <string name="action_search">搜索</string>

@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.treasure.basic.ContextHolder
 import com.treasure.basic.utils.GlideUtils
+import com.treasure.basic.utils.GlideUtils.wholeUrl
 import com.treasure.restart.R
 import com.treasure.restart.bean.MomentItem
 import com.treasure.restart.bean.UserInfoBean
@@ -71,8 +72,8 @@ class MomentListAdapter(
 
         fun bind() {
             userInfo?.let {
-                GlideUtils.loadImage(ContextHolder.app(), it.coverUrl, coverImage)
-                GlideUtils.loadCircle(ContextHolder.app(), it.avatar, avatar)
+                GlideUtils.loadImage(ContextHolder.app(), it.coverUrl.wholeUrl(), coverImage)
+                GlideUtils.loadCircle(ContextHolder.app(), it.avatar.wholeUrl(), avatar)
                 nickname.text = it.username
             } ?: run {
                 coverImage.setImageResource(R.drawable.ic_moment_cover)

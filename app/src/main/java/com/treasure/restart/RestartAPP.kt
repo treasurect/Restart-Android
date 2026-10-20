@@ -29,7 +29,7 @@ class RestartAPP: Application(), AppConfig {
 
         if (!isMainProcess()) return
 
-        EnvManager.init(this, AppEnvProvider(this, AppEnvironment.DEV))
+        EnvManager.init(this, AppEnvProvider(this, AppEnvironment.PROD))
         AppInitializer.init(this)
         AppConfig.VERSION_NAME = BuildConfig.VERSION_NAME
         AppConfig.isDebug = BuildConfig.DEBUG

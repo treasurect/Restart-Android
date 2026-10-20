@@ -10,7 +10,6 @@ import com.treasure.basic.network.ApiResult
 import com.treasure.basic.network.asResult
 import com.treasure.restart.bean.WeeklyReportList
 import com.treasure.restart.bean.FeedItem
-import com.treasure.restart.network.repository.TestRepo
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.asSharedFlow
 import kotlinx.coroutines.flow.collectLatest
@@ -18,7 +17,6 @@ import kotlinx.coroutines.launch
 
 class MainViewModel(application: Application) : BaseViewModel(application) {
 
-    private val repository = TestRepo()
 
     val categories = listOf("推荐", "RED", "热点", "直播", "短剧", "穿搭", "美甲")
 
@@ -60,25 +58,5 @@ class MainViewModel(application: Application) : BaseViewModel(application) {
                 coverColor = Color.rgb(84, 110, 182)
             )
         )
-    }
-
-    private val _topicsDynamicBean = MutableSharedFlow<Pair<Int, WeeklyReportList?>>()
-    val topicsDynamicBean = _topicsDynamicBean.asSharedFlow()
-    fun getWeeklyReportList() {
-        //if (loadType == 2) curPage++ else curPage = 1
-        viewModelScope.launch {
-            repository.getWeeklyReportList(1, 30).asResult().collectLatest {
-                when (it) {
-                    is ApiResult.Success -> {
-                        _topicsDynamicBean.emit(Pair(0, it.data))
-                    }
-
-                    is ApiResult.Error -> {
-                        toast.emit(it.msg)
-                        _topicsDynamicBean.emit(Pair(it.code, null))
-                    }
-                }
-            }
-        }
     }
 }

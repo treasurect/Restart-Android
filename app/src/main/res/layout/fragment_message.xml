@@ -6,43 +6,4 @@
     android:background="@color/white"
     android:orientation="vertical">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:gravity="center_vertical"
-        android:orientation="horizontal"
-        android:paddingStart="16dp"
-        android:paddingEnd="12dp">
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/tab_message"
-            android:textColor="@color/text_primary"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-        <ImageView
-            android:id="@+id/ivMessageSearch"
-            android:layout_width="22dp"
-            android:layout_height="22dp"
-            android:contentDescription="@string/action_search"
-            android:src="@drawable/ic_search" />
-    </LinearLayout>
-
-    <com.google.android.material.tabs.TabLayout
-        android:id="@+id/messageTabs"
-        android:layout_width="match_parent"
-        android:layout_height="42dp"
-        android:background="@color/white"
-        app:tabIndicatorColor="@color/xhs_red"
-        app:tabIndicatorFullWidth="false"
-        app:tabMode="fixed"
-        app:tabSelectedTextColor="@color/xhs_red"
-        app:tabTextColor="@color/text_secondary" />
-
-    <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/messagePager"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1" />
 </LinearLayout>
