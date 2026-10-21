@@ -18,9 +18,9 @@ class AppEnvProvider(context: Context, currentEnv: AppEnvironment) : IEnvironmen
         AppEnvironment.PROD -> "https://api.treasurect.site/"
     }
 
-    override fun isLogEnable(env: AppEnvironment): Boolean =
+    override fun logEnable(env: AppEnvironment): Boolean =
         when (env) {
-            AppEnvironment.PROD -> BuildConfig.DEBUG
+//            AppEnvironment.PROD -> BuildConfig.DEBUG
             else -> true
         }
 }

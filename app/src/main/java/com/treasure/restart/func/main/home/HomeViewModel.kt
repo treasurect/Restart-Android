@@ -117,6 +117,7 @@ class HomeViewModel(application: Application) : BaseViewModel(application) {
                     })
                 }
             } catch (e: Exception) {
+                e.printStackTrace()
                 toast.emit(e.message ?: "轮播图加载失败")
             }
         }

@@ -6,6 +6,7 @@ import androidx.lifecycle.lifecycleScope
 import com.treasure.basic.SharedKey
 import com.treasure.basic.helper.AppEventManager
 import com.treasure.basic.helper.AppRestartHelper
+import com.treasure.basic.helper.LogHelper
 import com.treasure.basic.helper.SharePreferenceManager
 import com.treasure.basic.utils.ToastUtils
 import com.treasure.restart.network.repository.UserRepository
@@ -70,6 +71,7 @@ object LoginManager {
                     AppRestartHelper.restart(context)
                 } else {
                     ToastUtils.show("登录失败：${it.msg}")
+                    LogHelper.e("Login failed: $it")
                 }
             }
         }

@@ -59,7 +59,7 @@
             android:drawableTop="@drawable/ic_message"
             android:drawablePadding="2dp"
             android:gravity="center"
-            android:text="@string/tab_message"
+            android:text="@string/tab_album"
             android:textColor="@color/text_secondary"
             android:textSize="10sp" />
 
