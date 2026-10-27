@@ -6,7 +6,7 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 import com.treasure.basic.utils.GlideUtils
 import com.treasure.basic.utils.GlideUtils.wholeUrl
-import com.treasure.restart.base.BaseActivity
+import com.treasure.basic.base.BaseActivity
 import com.treasure.restart.bean.HistoryItem
 import com.treasure.restart.databinding.ActivityHistoryDetailBinding
 

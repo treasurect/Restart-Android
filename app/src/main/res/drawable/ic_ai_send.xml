@@ -1,0 +1,26 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="40dp"
+    android:height="40dp"
+    android:viewportWidth="40"
+    android:viewportHeight="40">
+
+    <!-- 主按钮 -->
+    <path
+        android:fillColor="#6750F5"
+        android:pathData="M20,2A18,18 0,1 0,20 38A18,18 0,1 0,20 2Z" />
+
+    <!-- 高光 -->
+    <path
+        android:fillColor="#806CFF"
+        android:pathData="M20,4A16,16 0,0 1,35.5 16H4.5A16,16 0,0 1,20 4Z" />
+
+    <!-- 纸飞机 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M11,20L29,12L24,28L20.5,22.5L11,20Z" />
+
+    <path
+        android:fillColor="#6750F5"
+        android:pathData="M20.5,22.5L28,13L17.5,20.5L20.5,22.5Z" />
+
+</vector>

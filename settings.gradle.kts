@@ -22,6 +22,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Restart"
+rootProject.name = "Restart-Android"
 include(":app")
 include(":android-basic")

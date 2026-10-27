@@ -10,7 +10,7 @@ import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.material.tabs.TabLayoutMediator
 import com.treasure.basic.helper.AppRestartHelper
-import com.treasure.restart.base.BaseFragment
+import com.treasure.basic.base.BaseFragment
 import com.treasure.restart.helper.LoginManager
 import com.treasure.restart.databinding.FragmentProfileBinding
 import kotlinx.coroutines.delay

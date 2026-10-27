@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp">
+
+    <!-- 用户消息：右侧 -->
+    <TextView
+        android:id="@+id/tv_user_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginStart="48dp"
+        android:background="@drawable/bg_ai_user_message"
+        android:lineSpacingExtra="4dp"
+        android:maxWidth="300dp"
+        android:paddingStart="14dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="14dp"
+        android:paddingBottom="10dp"
+        android:textColor="#202123"
+        android:textSize="16sp"
+        android:visibility="gone"
+        tools:text="请帮我解释一下 Kotlin 协程" />
+
+    <!-- AI 助手消息：左侧 -->
+    <LinearLayout
+        android:id="@+id/assistant_message_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:contentDescription="AI 助手"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tv_assistant_message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="12dp"
+            android:layout_weight="1"
+            android:lineSpacingExtra="4dp"
+            android:textColor="#202123"
+            android:textSize="16sp"
+            tools:text="Kotlin 协程是一种轻量级并发方案，可以帮助你以顺序写法处理异步任务。" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -12,7 +12,7 @@ import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.treasure.restart.R
-import com.treasure.restart.base.BaseFragment
+import com.treasure.basic.base.BaseFragment
 import com.treasure.restart.bean.HistoryItem
 import com.treasure.restart.databinding.FragmentHomeChildBinding
 import kotlinx.coroutines.launch

@@ -16,8 +16,8 @@ import androidx.viewpager2.adapter.FragmentStateAdapter
 import com.google.android.material.tabs.TabLayoutMediator
 import com.treasure.basic.utils.DoubleClickUtilsKt.setDebouncedClickListener
 import com.treasure.restart.R
-import com.treasure.restart.base.BaseFragment
-import com.treasure.restart.databinding.FragmentHomeBinding
+import com.treasure.basic.base.BaseFragment
+import com.treasure.restart.databinding.FragmentKnowledgeBinding
 import com.treasure.restart.func.chat.ChatActivity
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
@@ -32,22 +32,15 @@ enum class HistoryPageType(val value: Int, val desc: String) {
     TYPE_RUSSIA(4, "russia"),
 }
 
-class HomeFragment : BaseFragment() {
-    companion object {
-        fun getInstance(): HomeFragment {
-            val homeFragment = HomeFragment()
-            return homeFragment
-        }
-    }
-
-    private lateinit var binding: FragmentHomeBinding
+class KnowledgeFragment : BaseFragment() {
+    private lateinit var binding: FragmentKnowledgeBinding
     private lateinit var autoScrollJob: Job
     private val fragments: ArrayList<Fragment> = ArrayList()
     private val homeViewModel: HomeViewModel by viewModels()
 
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, b: Bundle?): View {
-        binding = FragmentHomeBinding.inflate(layoutInflater, container, false)
+        binding = FragmentKnowledgeBinding.inflate(layoutInflater, container, false)
         return binding.root
     }
 

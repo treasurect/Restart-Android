@@ -4,7 +4,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import androidx.activity.viewModels
-import com.treasure.restart.base.BaseActivity
+import com.treasure.basic.base.BaseActivity
 import com.treasure.restart.databinding.ActivityPhoneLoginBinding
 import com.treasure.restart.helper.LoginManager
 import com.treasure.restart.helper.LoginType

@@ -6,7 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
-import com.treasure.restart.base.BaseFragment
+import com.treasure.basic.base.BaseFragment
 import com.treasure.restart.databinding.FragmentLoginBinding
 import com.treasure.restart.helper.LoginManager
 import com.treasure.restart.helper.LoginType

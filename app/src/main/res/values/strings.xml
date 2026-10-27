@@ -1,12 +1,15 @@
 <resources>
     <string name="app_name">Restart</string>
-    <string name="tab_home">首页</string>
-    <string name="tab_market">圈子</string>
-    <string name="tab_album">相册</string>
+    <string name="tab_ai">AI</string>
+    <string name="tab_knowledge">知识星球</string>
+    <string name="tab_moment">圈子</string>
+    <string name="tab_album">册集</string>
     <string name="tab_me">我</string>
     <string name="action_search">搜索</string>
     <string name="action_close">关闭</string>
     <string name="action_follow">关注</string>
     <string name="action_publish">发布</string>
     <string name="profile_edit">编辑主页</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

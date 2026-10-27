@@ -1,0 +1,32 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="40dp"
+    android:height="40dp"
+    android:viewportWidth="40"
+    android:viewportHeight="40">
+
+    <!-- 彩色主体 -->
+    <path
+        android:fillColor="#7C4DFF"
+        android:pathData="M20,2A18,18 0,1 0,20 38A18,18 0,1 0,20 2Z" />
+
+    <!-- 上层蓝紫色 -->
+    <path
+        android:fillColor="#5B8DEF"
+        android:pathData="M5,18C9,14 13,16 17,18C21,20 25,20 29,17C32,15 35,15 36,16L35,11C32,6 27,3 20,3C12,3 7,7 5,13C4,15 4,17 5,18Z" />
+
+    <!-- 底部波浪 -->
+    <path
+        android:fillColor="#A855F7"
+        android:pathData="M4,25C8,22 12,22 16,25C20,28 24,28 28,25C31,23 34,23 36,25L36,28C32,26 30,26 27,28C23,31 19,31 15,28C11,25 8,25 4,28Z" />
+
+    <!-- 停止符号 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M14,14H26V26H14Z" />
+
+    <!-- 中间横线 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M10,29H30V30.5H10Z" />
+
+</vector>

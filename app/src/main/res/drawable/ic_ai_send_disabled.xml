@@ -1,0 +1,26 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="40dp"
+    android:height="40dp"
+    android:viewportWidth="40"
+    android:viewportHeight="40">
+
+    <!-- 浅灰按钮 -->
+    <path
+        android:fillColor="#E5E7EB"
+        android:pathData="M20,2A18,18 0,1 0,20 38A18,18 0,1 0,20 2Z" />
+
+    <!-- 内圈 -->
+    <path
+        android:fillColor="#F3F4F6"
+        android:pathData="M20,5A15,15 0,1 0,20 35A15,15 0,1 0,20 5Z" />
+
+    <!-- 灰色纸飞机 -->
+    <path
+        android:fillColor="#9CA3AF"
+        android:pathData="M11,20L29,12L24,28L20.5,22.5L11,20Z" />
+
+    <path
+        android:fillColor="#F3F4F6"
+        android:pathData="M20.5,22.5L28,13L17.5,20.5L20.5,22.5Z" />
+
+</vector>

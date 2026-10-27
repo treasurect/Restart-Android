@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.PagerSnapHelper
 import androidx.recyclerview.widget.RecyclerView
 import com.treasure.basic.helper.LogHelper
 import com.treasure.restart.R
-import com.treasure.restart.base.BaseActivity
+import com.treasure.basic.base.BaseActivity
 
 class ImagePreviewActivity : BaseActivity() {
 

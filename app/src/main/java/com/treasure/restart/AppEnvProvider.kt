@@ -20,7 +20,7 @@ class AppEnvProvider(context: Context, currentEnv: AppEnvironment) : IEnvironmen
 
     override fun logEnable(env: AppEnvironment): Boolean =
         when (env) {
-//            AppEnvironment.PROD -> BuildConfig.DEBUG
+            AppEnvironment.PROD -> BuildConfig.DEBUG
             else -> true
         }
 }

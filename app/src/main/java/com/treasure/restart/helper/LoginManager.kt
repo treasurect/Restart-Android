@@ -3,7 +3,7 @@ package com.treasure.restart.helper
 import android.content.Context
 import androidx.fragment.app.FragmentActivity
 import androidx.lifecycle.lifecycleScope
-import com.treasure.basic.SharedKey
+import com.treasure.basic.constant.SPKey
 import com.treasure.basic.helper.AppEventManager
 import com.treasure.basic.helper.AppRestartHelper
 import com.treasure.basic.helper.LogHelper
@@ -21,7 +21,15 @@ object LoginManager {
 
 
     fun isLoggedIn(): Boolean {
-        return SharePreferenceManager.getBoolean(SharedKey.KEY_LOGGED_IN)
+        return SharePreferenceManager.getLong(SPKey.USER_ID) != 0L
+    }
+
+    fun checkLoginIn(callback: (Boolean) -> Unit) {
+        if (!isLoggedIn()) {
+//            callback(false)
+        } else {
+            callback(true)
+        }
     }
 
     fun login(context: Context?, loginType: LoginType, map: HashMap<String, Any> = HashMap()) {
@@ -64,8 +72,8 @@ object LoginManager {
             UserRepository().actionLoginCode(phone, value).collectLatest {
                 if (it.code == 200) {
                     ToastUtils.show(it.msg ?: "")
-                    SharePreferenceManager.putBoolean(SharedKey.KEY_LOGGED_IN, true)
-                    SharePreferenceManager.putString(SharedKey.ACCESS_TOKEN, it.data?.token ?: "")
+                    SharePreferenceManager.putLong(SPKey.USER_ID, it.data?.userId ?: 0L)
+                    SharePreferenceManager.putString(SPKey.ACCESS_TOKEN, it.data?.token ?: "")
                     AppEventManager.resetLoginExpired()
                     delay(500.milliseconds)
                     AppRestartHelper.restart(context)
@@ -78,8 +86,8 @@ object LoginManager {
     }
 
     fun logout() {
-        SharePreferenceManager.putBoolean(SharedKey.KEY_LOGGED_IN, false)
-        SharePreferenceManager.remove(SharedKey.ACCESS_TOKEN)
+        SharePreferenceManager.remove(SPKey.USER_ID)
+        SharePreferenceManager.remove(SPKey.ACCESS_TOKEN)
     }
 }
 

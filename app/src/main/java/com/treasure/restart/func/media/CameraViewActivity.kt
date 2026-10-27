@@ -10,7 +10,7 @@ import androidx.camera.core.ImageCaptureException
 import androidx.camera.core.Preview
 import androidx.camera.lifecycle.ProcessCameraProvider
 import androidx.core.content.ContextCompat
-import com.treasure.restart.base.BaseActivity
+import com.treasure.basic.base.BaseActivity
 import com.treasure.restart.databinding.ActivityCameraViewBinding
 import com.treasure.restart.func.main.moment.MomentPublishActivity
 import java.io.File
