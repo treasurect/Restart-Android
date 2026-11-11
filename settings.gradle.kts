@@ -25,3 +25,4 @@ dependencyResolutionManagement {
 rootProject.name = "Restart"
 include(":app")
 include(":android-basic")
+include(":android-business")
