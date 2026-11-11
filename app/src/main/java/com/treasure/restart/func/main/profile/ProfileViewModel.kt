@@ -6,8 +6,8 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.treasure.basic.utils.JsonUtils
 import com.treasure.basic.utils.ToastUtils
-import com.treasure.restart.bean.UserInfoBean
-import com.treasure.restart.network.repository.UserRepository
+import com.treasure.business.bean.UserInfoBean
+import com.treasure.business.network.repository.UserRepository
 import kotlinx.coroutines.launch
 
 class ProfileViewModel : ViewModel() {

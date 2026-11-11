@@ -11,9 +11,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.treasure.basic.ContextHolder
 import com.treasure.basic.utils.GlideUtils
 import com.treasure.basic.utils.GlideUtils.wholeUrl
+import com.treasure.business.bean.UserInfoBean
 import com.treasure.restart.R
 import com.treasure.restart.bean.MomentItem
-import com.treasure.restart.bean.UserInfoBean
 
 class MomentListAdapter(
     private val items: MutableList<MomentItem>,

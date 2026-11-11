@@ -15,7 +15,7 @@ import com.treasure.basic.helper.AppEvent
 import com.treasure.basic.helper.AppEventManager
 import com.treasure.basic.utils.ToastUtils
 import com.treasure.restart.R
-import com.treasure.restart.base.BaseActivity
+import com.treasure.basic.base.BaseActivity
 import com.treasure.restart.func.FileUploadViewModel
 import com.treasure.restart.func.media.ImagePreviewActivity
 import kotlinx.coroutines.flow.collectLatest

@@ -1,0 +1,28 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/treasure/Project/Android/Restart-Android/android-business/src/main/AndroidManifest.xml:2:1-11:12
+INJECTED from /Users/treasure/Project/Android/Restart-Android/android-business/src/main/AndroidManifest.xml:2:1-11:12
+	package
+		INJECTED from /Users/treasure/Project/Android/Restart-Android/android-business/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/treasure/Project/Android/Restart-Android/android-business/src/main/AndroidManifest.xml:2:11-69
+application
+ADDED from /Users/treasure/Project/Android/Restart-Android/android-business/src/main/AndroidManifest.xml:4:5-9:37
+	android:supportsRtl
+		ADDED from /Users/treasure/Project/Android/Restart-Android/android-business/src/main/AndroidManifest.xml:9:9-35
+	android:label
+		ADDED from /Users/treasure/Project/Android/Restart-Android/android-business/src/main/AndroidManifest.xml:7:9-41
+	android:roundIcon
+		ADDED from /Users/treasure/Project/Android/Restart-Android/android-business/src/main/AndroidManifest.xml:8:9-54
+	android:icon
+		ADDED from /Users/treasure/Project/Android/Restart-Android/android-business/src/main/AndroidManifest.xml:6:9-43
+	android:allowBackup
+		ADDED from /Users/treasure/Project/Android/Restart-Android/android-business/src/main/AndroidManifest.xml:5:9-35
+uses-sdk
+INJECTED from /Users/treasure/Project/Android/Restart-Android/android-business/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/treasure/Project/Android/Restart-Android/android-business/src/main/AndroidManifest.xml
+INJECTED from /Users/treasure/Project/Android/Restart-Android/android-business/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/treasure/Project/Android/Restart-Android/android-business/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/treasure/Project/Android/Restart-Android/android-business/src/main/AndroidManifest.xml

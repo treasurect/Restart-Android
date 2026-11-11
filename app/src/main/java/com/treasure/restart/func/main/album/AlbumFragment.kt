@@ -9,7 +9,7 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import androidx.recyclerview.widget.GridLayoutManager
-import com.treasure.restart.base.BaseFragment
+import com.treasure.basic.base.BaseFragment
 import com.treasure.restart.databinding.FragmentAlbumBinding
 import kotlinx.coroutines.launch
 

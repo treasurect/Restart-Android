@@ -24,6 +24,7 @@
         android:theme="@style/Theme.Restart">
         <activity
             android:name=".MainActivity"
+            android:windowSoftInputMode="adjustResize"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -35,7 +36,7 @@
             android:name=".func.chat.ChatActivity"
             android:exported="false" />
         <activity
-            android:name=".func.login.PhoneLoginActivity"
+            android:name="com.treasure.business.func.login.PhoneLoginActivity"
             android:exported="false" />
         <activity
             android:name=".func.media.CameraViewActivity"

@@ -4,7 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.treasure.restart.base.BaseFragment
+import com.treasure.basic.base.BaseFragment
 import com.treasure.restart.databinding.FragmentProfileTabBinding
 
 class ProfileTabFragment : BaseFragment() {

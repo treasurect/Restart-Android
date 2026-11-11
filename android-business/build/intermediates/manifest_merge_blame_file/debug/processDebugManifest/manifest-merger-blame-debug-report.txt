@@ -1,0 +1,22 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.treasure.business" >
+4
+5    <uses-sdk android:minSdkVersion="24" />
+5-->INJECTED
+5-->INJECTED
+6
+7    <application
+7-->/Users/treasure/Project/Android/Restart-Android/android-business/src/main/AndroidManifest.xml:4:5-9:37
+8        android:allowBackup="true"
+8-->/Users/treasure/Project/Android/Restart-Android/android-business/src/main/AndroidManifest.xml:5:9-35
+9        android:icon="@mipmap/ic_launcher"
+9-->/Users/treasure/Project/Android/Restart-Android/android-business/src/main/AndroidManifest.xml:6:9-43
+10        android:label="@string/app_name"
+10-->/Users/treasure/Project/Android/Restart-Android/android-business/src/main/AndroidManifest.xml:7:9-41
+11        android:roundIcon="@mipmap/ic_launcher_round"
+11-->/Users/treasure/Project/Android/Restart-Android/android-business/src/main/AndroidManifest.xml:8:9-54
+12        android:supportsRtl="true" />
+12-->/Users/treasure/Project/Android/Restart-Android/android-business/src/main/AndroidManifest.xml:9:9-35
+13
+14</manifest>

@@ -18,7 +18,7 @@ import com.treasure.basic.utils.GlideUtils
 import com.treasure.basic.utils.GlideUtils.wholeUrl
 import com.treasure.basic.utils.ToastUtils
 import com.treasure.restart.R
-import com.treasure.restart.base.BaseFragment
+import com.treasure.basic.base.BaseFragment
 import com.treasure.restart.databinding.FragmentMomentListBinding
 import com.treasure.restart.func.main.profile.ProfileViewModel
 import com.treasure.restart.func.media.ImagePreviewActivity

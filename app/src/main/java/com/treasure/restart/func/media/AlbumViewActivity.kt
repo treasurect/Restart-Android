@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.provider.MediaStore
 import android.widget.Toast
 import androidx.recyclerview.widget.GridLayoutManager
-import com.treasure.restart.base.BaseActivity
+import com.treasure.basic.base.BaseActivity
 import com.treasure.restart.databinding.ActivityAlbumViewBinding
 import com.treasure.restart.func.main.moment.MomentPublishActivity
 

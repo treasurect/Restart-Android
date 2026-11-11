@@ -4,7 +4,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.treasure.basic.constant.WebLoadKey.transUrlByBaseH5
 import com.treasure.basic.helper.LogHelper
 import com.treasure.basic.utils.GlideUtils.wholeUrl
 import com.treasure.basic.view.CommonImageView

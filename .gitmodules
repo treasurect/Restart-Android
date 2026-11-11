@@ -1,3 +1,9 @@
 [submodule "android-basic"]
 	path = android-basic
 	url = git@github.com:treasurect/android-basic.git
+[submodule "android-business"]
+	path = android-business
+	url = https://github.com/treasurect/android-business.git
+[submodule "android-ai"]
+	path = android-ai
+	url = https://github.com/treasurect/android-ai.git

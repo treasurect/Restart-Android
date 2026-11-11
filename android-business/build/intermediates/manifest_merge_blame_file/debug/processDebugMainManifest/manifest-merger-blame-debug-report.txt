@@ -1,0 +1,162 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.treasure.business"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+7-->INJECTED
+8        android:minSdkVersion="24"
+8-->INJECTED
+9        android:targetSdkVersion="36" />
+9-->INJECTED
+10
+11    <uses-feature
+11-->[:android-basic] /Users/treasure/Project/Android/Restart-Android/android-basic/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:8:5-10:36
+12        android:name="android.hardware.camera"
+12-->[:android-basic] /Users/treasure/Project/Android/Restart-Android/android-basic/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:9:9-47
+13        android:required="false" />
+13-->[:android-basic] /Users/treasure/Project/Android/Restart-Android/android-basic/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:10:9-33
+14
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->[:android-basic] /Users/treasure/Project/Android/Restart-Android/android-basic/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:12:5-67
+15-->[:android-basic] /Users/treasure/Project/Android/Restart-Android/android-basic/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:12:22-64
+16    <uses-permission android:name="android.permission.CAMERA" />
+16-->[:android-basic] /Users/treasure/Project/Android/Restart-Android/android-basic/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:13:5-65
+16-->[:android-basic] /Users/treasure/Project/Android/Restart-Android/android-basic/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:13:22-62
+17    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+17-->[:android-basic] /Users/treasure/Project/Android/Restart-Android/android-basic/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:14:5-80
+17-->[:android-basic] /Users/treasure/Project/Android/Restart-Android/android-basic/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:14:22-77
+18    <uses-permission
+18-->[:android-basic] /Users/treasure/Project/Android/Restart-Android/android-basic/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:15:5-17:38
+19        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+19-->[:android-basic] /Users/treasure/Project/Android/Restart-Android/android-basic/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:16:9-65
+20        android:maxSdkVersion="28" />
+20-->[:android-basic] /Users/treasure/Project/Android/Restart-Android/android-basic/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:17:9-35
+21    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+21-->[:android-basic] /Users/treasure/Project/Android/Restart-Android/android-basic/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:18:5-20:40
+21-->[:android-basic] /Users/treasure/Project/Android/Restart-Android/android-basic/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:19:9-66
+22    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+22-->[:android-basic] /Users/treasure/Project/Android/Restart-Android/android-basic/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:21:5-76
+22-->[:android-basic] /Users/treasure/Project/Android/Restart-Android/android-basic/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:21:22-73
+23    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+23-->[:android-basic] /Users/treasure/Project/Android/Restart-Android/android-basic/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:22:5-75
+23-->[:android-basic] /Users/treasure/Project/Android/Restart-Android/android-basic/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:22:22-72
+24    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+24-->[:android-basic] /Users/treasure/Project/Android/Restart-Android/android-basic/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:23:5-75
+24-->[:android-basic] /Users/treasure/Project/Android/Restart-Android/android-basic/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:23:22-72
+25    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+25-->[:android-basic] /Users/treasure/Project/Android/Restart-Android/android-basic/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:24:5-79
+25-->[:android-basic] /Users/treasure/Project/Android/Restart-Android/android-basic/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:24:22-76
+26    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+26-->[:android-basic] /Users/treasure/Project/Android/Restart-Android/android-basic/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:25:5-81
+26-->[:android-basic] /Users/treasure/Project/Android/Restart-Android/android-basic/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:25:22-78
+27
+28    <permission
+28-->[androidx.core:core:1.10.1] /Users/treasure/.gradle/caches/9.7.1/transforms/38ac015f84b7b62ca589b2def0e92f4f/transformed/core-1.10.1/AndroidManifest.xml:22:5-24:47
+29        android:name="com.treasure.business.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+29-->[androidx.core:core:1.10.1] /Users/treasure/.gradle/caches/9.7.1/transforms/38ac015f84b7b62ca589b2def0e92f4f/transformed/core-1.10.1/AndroidManifest.xml:23:9-81
+30        android:protectionLevel="signature" />
+30-->[androidx.core:core:1.10.1] /Users/treasure/.gradle/caches/9.7.1/transforms/38ac015f84b7b62ca589b2def0e92f4f/transformed/core-1.10.1/AndroidManifest.xml:24:9-44
+31
+32    <uses-permission android:name="com.treasure.business.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+32-->[androidx.core:core:1.10.1] /Users/treasure/.gradle/caches/9.7.1/transforms/38ac015f84b7b62ca589b2def0e92f4f/transformed/core-1.10.1/AndroidManifest.xml:26:5-97
+32-->[androidx.core:core:1.10.1] /Users/treasure/.gradle/caches/9.7.1/transforms/38ac015f84b7b62ca589b2def0e92f4f/transformed/core-1.10.1/AndroidManifest.xml:26:22-94
+33
+34    <application
+34-->/Users/treasure/Project/Android/Restart-Android/android-business/src/main/AndroidManifest.xml:4:5-9:37
+35        android:allowBackup="true"
+35-->/Users/treasure/Project/Android/Restart-Android/android-business/src/main/AndroidManifest.xml:5:9-35
+36        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+36-->[androidx.core:core:1.10.1] /Users/treasure/.gradle/caches/9.7.1/transforms/38ac015f84b7b62ca589b2def0e92f4f/transformed/core-1.10.1/AndroidManifest.xml:28:18-86
+37        android:debuggable="true"
+38        android:extractNativeLibs="false"
+38-->INJECTED
+39        android:icon="@mipmap/ic_launcher"
+39-->/Users/treasure/Project/Android/Restart-Android/android-business/src/main/AndroidManifest.xml:6:9-43
+40        android:label="@string/app_name"
+40-->/Users/treasure/Project/Android/Restart-Android/android-business/src/main/AndroidManifest.xml:7:9-41
+41        android:roundIcon="@mipmap/ic_launcher_round"
+41-->/Users/treasure/Project/Android/Restart-Android/android-business/src/main/AndroidManifest.xml:8:9-54
+42        android:supportsRtl="true"
+42-->/Users/treasure/Project/Android/Restart-Android/android-business/src/main/AndroidManifest.xml:9:9-35
+43        android:testOnly="true"
+44        android:theme="@style/Theme.Restart" >
+44-->[:android-basic] /Users/treasure/Project/Android/Restart-Android/android-basic/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:31:9-45
+45        <provider
+45-->[androidx.emoji2:emoji2:1.2.0] /Users/treasure/.gradle/caches/9.7.1/transforms/fe35e20b1c78e899a9b8d4790fefe8c3/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+46            android:name="androidx.startup.InitializationProvider"
+46-->[androidx.emoji2:emoji2:1.2.0] /Users/treasure/.gradle/caches/9.7.1/transforms/fe35e20b1c78e899a9b8d4790fefe8c3/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
+47            android:authorities="com.treasure.business.androidx-startup"
+47-->[androidx.emoji2:emoji2:1.2.0] /Users/treasure/.gradle/caches/9.7.1/transforms/fe35e20b1c78e899a9b8d4790fefe8c3/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
+48            android:exported="false" >
+48-->[androidx.emoji2:emoji2:1.2.0] /Users/treasure/.gradle/caches/9.7.1/transforms/fe35e20b1c78e899a9b8d4790fefe8c3/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
+49            <meta-data
+49-->[androidx.emoji2:emoji2:1.2.0] /Users/treasure/.gradle/caches/9.7.1/transforms/fe35e20b1c78e899a9b8d4790fefe8c3/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+50                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+50-->[androidx.emoji2:emoji2:1.2.0] /Users/treasure/.gradle/caches/9.7.1/transforms/fe35e20b1c78e899a9b8d4790fefe8c3/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
+51                android:value="androidx.startup" />
+51-->[androidx.emoji2:emoji2:1.2.0] /Users/treasure/.gradle/caches/9.7.1/transforms/fe35e20b1c78e899a9b8d4790fefe8c3/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+52            <meta-data
+52-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/treasure/.gradle/caches/9.7.1/transforms/8185b873060dfba9fcf620ef75dc582d/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:29:13-31:52
+53                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+53-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/treasure/.gradle/caches/9.7.1/transforms/8185b873060dfba9fcf620ef75dc582d/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:30:17-78
+54                android:value="androidx.startup" />
+54-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/treasure/.gradle/caches/9.7.1/transforms/8185b873060dfba9fcf620ef75dc582d/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:31:17-49
+55            <meta-data
+55-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/treasure/.gradle/caches/9.7.1/transforms/db170ecb028b747ed3578cdc13dd6183/transformed/profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
+56                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+56-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/treasure/.gradle/caches/9.7.1/transforms/db170ecb028b747ed3578cdc13dd6183/transformed/profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
+57                android:value="androidx.startup" />
+57-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/treasure/.gradle/caches/9.7.1/transforms/db170ecb028b747ed3578cdc13dd6183/transformed/profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
+58        </provider>
+59
+60        <service
+60-->[androidx.room:room-runtime:2.5.2] /Users/treasure/.gradle/caches/9.7.1/transforms/d038163b3ab456a86463bcc0e1923a28/transformed/room-runtime-2.5.2/AndroidManifest.xml:24:9-28:63
+61            android:name="androidx.room.MultiInstanceInvalidationService"
+61-->[androidx.room:room-runtime:2.5.2] /Users/treasure/.gradle/caches/9.7.1/transforms/d038163b3ab456a86463bcc0e1923a28/transformed/room-runtime-2.5.2/AndroidManifest.xml:25:13-74
+62            android:directBootAware="true"
+62-->[androidx.room:room-runtime:2.5.2] /Users/treasure/.gradle/caches/9.7.1/transforms/d038163b3ab456a86463bcc0e1923a28/transformed/room-runtime-2.5.2/AndroidManifest.xml:26:13-43
+63            android:exported="false" />
+63-->[androidx.room:room-runtime:2.5.2] /Users/treasure/.gradle/caches/9.7.1/transforms/d038163b3ab456a86463bcc0e1923a28/transformed/room-runtime-2.5.2/AndroidManifest.xml:27:13-37
+64
+65        <receiver
+65-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/treasure/.gradle/caches/9.7.1/transforms/db170ecb028b747ed3578cdc13dd6183/transformed/profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
+66            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+66-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/treasure/.gradle/caches/9.7.1/transforms/db170ecb028b747ed3578cdc13dd6183/transformed/profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
+67            android:directBootAware="false"
+67-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/treasure/.gradle/caches/9.7.1/transforms/db170ecb028b747ed3578cdc13dd6183/transformed/profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
+68            android:enabled="true"
+68-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/treasure/.gradle/caches/9.7.1/transforms/db170ecb028b747ed3578cdc13dd6183/transformed/profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
+69            android:exported="true"
+69-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/treasure/.gradle/caches/9.7.1/transforms/db170ecb028b747ed3578cdc13dd6183/transformed/profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
+70            android:permission="android.permission.DUMP" >
+70-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/treasure/.gradle/caches/9.7.1/transforms/db170ecb028b747ed3578cdc13dd6183/transformed/profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
+71            <intent-filter>
+71-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/treasure/.gradle/caches/9.7.1/transforms/db170ecb028b747ed3578cdc13dd6183/transformed/profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
+72                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+72-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/treasure/.gradle/caches/9.7.1/transforms/db170ecb028b747ed3578cdc13dd6183/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
+72-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/treasure/.gradle/caches/9.7.1/transforms/db170ecb028b747ed3578cdc13dd6183/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
+73            </intent-filter>
+74            <intent-filter>
+74-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/treasure/.gradle/caches/9.7.1/transforms/db170ecb028b747ed3578cdc13dd6183/transformed/profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
+75                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+75-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/treasure/.gradle/caches/9.7.1/transforms/db170ecb028b747ed3578cdc13dd6183/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
+75-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/treasure/.gradle/caches/9.7.1/transforms/db170ecb028b747ed3578cdc13dd6183/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
+76            </intent-filter>
+77            <intent-filter>
+77-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/treasure/.gradle/caches/9.7.1/transforms/db170ecb028b747ed3578cdc13dd6183/transformed/profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
+78                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+78-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/treasure/.gradle/caches/9.7.1/transforms/db170ecb028b747ed3578cdc13dd6183/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
+78-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/treasure/.gradle/caches/9.7.1/transforms/db170ecb028b747ed3578cdc13dd6183/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
+79            </intent-filter>
+80            <intent-filter>
+80-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/treasure/.gradle/caches/9.7.1/transforms/db170ecb028b747ed3578cdc13dd6183/transformed/profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
+81                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+81-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/treasure/.gradle/caches/9.7.1/transforms/db170ecb028b747ed3578cdc13dd6183/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
+81-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/treasure/.gradle/caches/9.7.1/transforms/db170ecb028b747ed3578cdc13dd6183/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
+82            </intent-filter>
+83        </receiver>
+84    </application>
+85
+86</manifest>

@@ -23,7 +23,18 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    signingConfigs {
+        create("release") {
+            storeFile = file("/Users/treasure/Project/Android/_APK/restart.jks")
+            storePassword = "treasure"
+            keyAlias = "t"
+            keyPassword = "treasure"
+        }
+    }
+
     buildTypes {
+        debug {
+        }
         release {
             isMinifyEnabled = true
             isShrinkResources = true
@@ -32,6 +43,7 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+            signingConfig = signingConfigs.getByName("release")
         }
     }
     compileOptions {
@@ -65,6 +77,8 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
 
     implementation(project(":android-basic"))
+    implementation(project(":android-business"))
+    implementation(project(":android-ai"))
 
     implementation("io.github.scwang90:refresh-layout-kernel:3.0.0-alpha") //刷新组件
     implementation("io.github.scwang90:refresh-header-classics:3.0.0-alpha") //刷新头组件

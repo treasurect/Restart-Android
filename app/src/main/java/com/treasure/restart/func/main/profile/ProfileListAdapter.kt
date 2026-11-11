@@ -3,7 +3,7 @@ package com.treasure.restart.func.main.profile
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.treasure.restart.bean.UserInfoBean
+import com.treasure.business.bean.UserInfoBean
 import com.treasure.restart.databinding.ItemProfileActionBinding
 import com.treasure.restart.databinding.ItemProfileHeaderBinding
 
