@@ -1,8 +1,0 @@
-com.treasure.business.android-business-pngs-0 /Users/treasure/Project/Android/Restart-Android/android-business/build/generated/res/pngs/debug
-com.treasure.business.android-business-updated_navigation_xml-1 /Users/treasure/Project/Android/Restart-Android/android-business/build/generated/updated_navigation_xml/debug
-com.treasure.business.android-business-mergeDebugResources-2 /Users/treasure/Project/Android/Restart-Android/android-business/build/intermediates/incremental/debug/mergeDebugResources/merged.dir
-com.treasure.business.android-business-mergeDebugResources-3 /Users/treasure/Project/Android/Restart-Android/android-business/build/intermediates/incremental/debug/mergeDebugResources/stripped.dir
-com.treasure.business.android-business-debug-4 /Users/treasure/Project/Android/Restart-Android/android-business/build/intermediates/merged_res/debug/mergeDebugResources
-com.treasure.business.android-business-debug-5 /Users/treasure/Project/Android/Restart-Android/android-business/build/intermediates/packaged_res/debug/packageDebugResources
-com.treasure.business.android-business-debug-6 /Users/treasure/Project/Android/Restart-Android/android-business/src/debug/res
-com.treasure.business.android-business-main-7 /Users/treasure/Project/Android/Restart-Android/android-business/src/main/res

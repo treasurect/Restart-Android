@@ -1,4 +1,0 @@
-com.treasure.business.test.android-business-updated_navigation_xml-0 /Users/treasure/Project/Android/Restart-Android/android-business/build/generated/updated_navigation_xml/debugAndroidTest
-com.treasure.business.test.android-business-packageDebugAndroidTestResources-1 /Users/treasure/Project/Android/Restart-Android/android-business/build/intermediates/incremental/debugAndroidTest/packageDebugAndroidTestResources/merged.dir
-com.treasure.business.test.android-business-packageDebugAndroidTestResources-2 /Users/treasure/Project/Android/Restart-Android/android-business/build/intermediates/incremental/debugAndroidTest/packageDebugAndroidTestResources/stripped.dir
-com.treasure.business.test.android-business-debugAndroidTest-3 /Users/treasure/Project/Android/Restart-Android/android-business/build/intermediates/merged_res/debugAndroidTest/mergeDebugAndroidTestResources
