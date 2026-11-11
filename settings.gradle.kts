@@ -25,5 +25,5 @@ dependencyResolutionManagement {
 rootProject.name = "Restart-Android"
 include(":app")
 include(":android-basic")
-//include(":android-business")
+include(":android-business")
 include(":android-ai")

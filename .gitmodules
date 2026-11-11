@@ -5,3 +5,6 @@
 	path = android-ai
 	url = https://github.com/treasurect/android-ai.git
 b
+[submodule "android-business"]
+	path = android-business
+	url = https://github.com/treasurect/android-business.git

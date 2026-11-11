@@ -77,7 +77,7 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
 
     implementation(project(":android-basic"))
-//    implementation(project(":android-business"))
+    implementation(project(":android-business"))
     implementation(project(":android-ai"))
 
     implementation("io.github.scwang90:refresh-layout-kernel:3.0.0-alpha") //刷新组件
