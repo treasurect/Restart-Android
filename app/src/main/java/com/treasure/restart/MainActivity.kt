@@ -23,11 +23,11 @@ import com.treasure.basic.utils.PermissionHelper
 import com.treasure.basic.view.dialog.BottomDialogBuilder
 import com.treasure.restart.databinding.ActivityMainBinding
 import com.treasure.business.func.login.LoginFragment
-import com.treasure.restart.func.main.MomentsMixFragment
-import com.treasure.restart.func.main.home.KnowledgeFragment
-import com.treasure.restart.func.main.profile.ProfileFragment
-import com.treasure.restart.func.media.AlbumViewActivity
-import com.treasure.restart.func.media.CameraViewActivity
+import com.treasure.restart.func.moment.MomentsMixFragment
+import com.treasure.restart.func.home.KnowledgeFragment
+import com.treasure.restart.func.profile.ProfileFragment
+import com.treasure.business.func.album.AlbumViewActivity
+import com.treasure.business.func.camera.CameraViewActivity
 import com.treasure.business.helper.LoginManager
 import kotlinx.coroutines.launch
 

@@ -4,5 +4,6 @@
     <mapping directory="" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/android-ai" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/android-basic" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/android-business" vcs="Git" />
   </component>
 </project>

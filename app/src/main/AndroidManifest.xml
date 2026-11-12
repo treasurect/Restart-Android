@@ -39,24 +39,24 @@
             android:name="com.treasure.business.func.login.PhoneLoginActivity"
             android:exported="false" />
         <activity
-            android:name=".func.media.CameraViewActivity"
+            android:name="com.treasure.business.func.camera.CameraViewActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".func.media.AlbumViewActivity"
+            android:name="com.treasure.business.func.album.AlbumViewActivity"
             android:screenOrientation="portrait"
             android:exported="false" />
         <activity
-            android:name=".func.media.ImagePreviewActivity"
+            android:name="com.treasure.business.func.preview.ImagePreviewActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".func.main.moment.MomentPublishActivity"
+            android:name=".func.moment.MomentPublishActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".func.main.home.HistoryDetailActivity"
+            android:name=".func.home.HistoryDetailActivity"
             android:exported="false" />
     </application>
 
